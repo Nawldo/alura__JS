@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>>Ford - novo veículo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="logo">
+      <img src="img/logo-ford-256.png" alt="Logomarca da Ford">
+    </div>
+    <div>
+      <nav class="menu">
+        <!--A tag a serve para criar um hiperlink de diracionamento no cada das três
+            paginas html abaixo-->
+        <a href="index.html">Home</a>
+        <a href="lancamento.html">Lançamento</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="contato">
+      <img src="img/xls 2.2 diesel.jpg" alt="imagem do carro">
+      <form class="formulario" action="processa_formulario.php" method="POST">
+         <P><Strong>Sobre você</Strong></P>
+        
+          <label for="nome"></label>
+          <input type="text" placeholder="NOME*" id="nome" name="nome" required>
+      
+          <label for="email"></label>
+          <input type="email" placeholder="E-MAIL*" id="email" name="email" required>
+
+          <label for="cpf"></label>
+          <input type="text" placeholder="CPF*" id="cpf" name="cpf" required>
+
+          <label for="sobrenome"></label>
+          <input type="text" placeholder="SOBRENOME*" id="sobrenome" name="sobrenome" required>
+
+          <label for="Telefone"></label>
+          <input type="text" placeholder="TELEFONE*" id="sobrenome" name="sobrenome" required>
+      
+          <select id="tipo_contato" name="tipo_contato">
+            <option value=""></option>
+            <option value="elogio">Elogio</option>
+            <option value="reclamacao">Reclamação</option>
+            <option value="solicitacao">Solicitação</option>
+          </select>
+         
+          <label for="Mensagem"></label>
+          <textarea  placeholder="MENSAGEM*" rows="5" required></textarea>
+     
+          <button type="submit" id="botao_enviar">Enviar</button>
+      </form>
+    </section>
+
+ </main>
+  <footer class="rodape">
+      <div class="redes">
+        <p>Redes Sociais</p>
+        <a href="#"><img src="img/facebook-50.png" alt="Facebook"></a>
+        <a href="#"><img src="img/youtube-squared-50.png" alt="YouTube"></a>
+        <a href="#"><img src="img/instagram-logo-50.png" alt="Instagram"></a>
+      </div>
+    <div>
+    <p class="copyright">&copy; 2025 Ford Motor Company. Todos os direitos reservados.</p>
+  </div>
+    <div class="logop">
+      <img src="img/ford-96.png" alt="Logomarca da Ford">
+    </div>
+    
+  </footer>
+</body>
+
+</html>

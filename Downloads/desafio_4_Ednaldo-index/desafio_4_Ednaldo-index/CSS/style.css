@@ -1,0 +1,369 @@
+/* Reset de estilos */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração geral */
+
+html,
+body {
+    height: 100%; /* Faz com que a página ocupe toda a altura da tela */
+    display: flex;
+    flex-direction: column;
+    font-family:Arial, Helvetica, sans-serif
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffffff;
+    position: relative;
+    /* Define posicionamento para elementos internos */
+}
+
+/* Área principal */
+main {
+    display: flex;
+    /* Ativa o modelo Flexbox */
+    flex-direction: column;
+    align-items: center;
+    /* Centraliza verticalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    /* Faz com que o main ocupe a altura total da tela */
+    flex-grow: 1;
+    /* Faz com que o conteúdo principal ocupe o espaço disponível */
+}
+
+/* Rodapé */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b357e;
+    color: white;
+    padding: 10px;
+    /* Mantém o rodapé fixo no final da página */
+}
+
+
+/*comuns no cabeçalho*/
+
+.logo img {
+    width: 160px;/* Ajuste de tamanho da logo */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    /* Centraliza os itens do menu */
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    /* Ajusta a posição vertical */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centraliza horizontalmente */
+}
+
+.menu a {
+    font-size: 20px;
+    color: #1351d8;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Imagem central */
+#imagem_1 img {
+    width: 100%;
+    max-width: 3000px;
+    height: auto;
+}
+
+/*comuns no rodapé*/
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    /* Alinha texto e imagens na mesma linha */
+    gap: 10px;
+    /* Espaço entre os elementos */
+}
+
+.redes img {
+    width: 30px;
+    /* Ajusta para um tamanho menor */
+    height: auto;
+    /* Mantém a proporção */
+}
+
+.redes p {
+    white-space: nowrap;
+    /* Impede que o texto quebre em várias linhas */
+}
+
+.logop{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.logop img {
+    width: 100px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    /* Ajuste de tamanho do texto */
+}
+
+/* class/id em index*/
+#imagem_1 img {
+    width: 100%;
+    max-width: 3000px;
+    height: auto;
+}
+
+/* class/id em lçançamento*/
+
+
+.modelos {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 20px; /* Adiciona um pequeno espaçamento */
+}
+
+.modelos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+ .modelo {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+}
+
+ .modelo img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+ .modelo p {
+    margin: 10px 0;
+}
+
+ button {
+    margin-top: 20px; 
+    padding: 12px 20px;
+    background-color: #1351d8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0d3a9e;
+    transform: 1.05;
+}
+
+.container {
+    width: 50%;
+    height: 40%;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+
+th,
+td {
+    border: 1px solid #ffffff;
+    padding: 4px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+td img {
+    width: 200px;
+    height: auto;
+}
+
+#cor {
+    color: #0056b3;
+}
+
+.botao {
+    margin-top: 20px 10;
+    text-align: center;
+}
+
+.compare-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* class/id em contato*/
+
+.contato {
+    display: flex;
+    justify-content: center;
+    /* Centraliza os elementos */
+    align-items: center;
+    /* Alinha verticalmente */
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.contato p {
+ justify-content: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.campo {
+    display: flex;
+    align-items: center;
+    /* Alinha os elementos verticalmente */
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    /* Alinha os elementos verticalmente */
+}
+
+label {
+    width: 120px;
+    /* Define uma largura fixa para os rótulos */
+    text-align: left;
+    /* Alinha o texto à esquerda */
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    flex-grow: 1;
+    /* Faz com que ocupem o espaço disponível */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario input[type="text"] 
+.formulario input[type="email"]
+.formulario input[type="tel"]
+.formulario input select
+.formulario input textarea
+{
+    width: 100%;
+    margin-top: 5px 0 15px;
+    max-width: 350px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* box-sizing: border-box */
+}
+
+.formulario button:hover {
+    background-color: #0056b3;
+    width:auto ;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+body {
+        font-size: 14px;
+      }
+    
+
+header {
+        display: block;
+        flex-direction: column;
+        margin: 10px o;
+    }
+nav ul li{
+    display: bl;
+}
+.menu {
+    
+        position: static;
+        /* Mantém o menu no fluxo normal */
+        flex-direction: row;
+        align-items: center;
+        font-size: 18px;
+        /* Aumenta a legibilidade */
+        font-weight: bold;
+        /* Deixa o texto mais marcante */
+}
+
+nav a{
+        top: -1rem;
+        font-style: 30%;
+}
+
+    
+th, td {
+        font-size: 13px;
+        padding: 10px;
+}
+table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+}
+    
+th, td {
+        font-size: 13px;
+        padding: 10px;
+}
+        
+}
